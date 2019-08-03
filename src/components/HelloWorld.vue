@@ -5,6 +5,7 @@
 </template>
 <script>
   import SearchBar from '@/components/SearchBar'
+  import SpiderAnimation from '@/components/spiderAnimation.js'
   const resultList = [{
     id: 0,
     text: '搜索值的气味1'
@@ -44,6 +45,15 @@
       selectHandle () {
         // console.log(this.value)
       }
+    },
+    mounted() {
+      let spiderAnimation = new SpiderAnimation(),
+        params = {
+          width: 400,
+          count: 50
+        }
+      spiderAnimation.init(Object.assign(params, {direction: 'left'}))
+      spiderAnimation.init(Object.assign(params, {direction: 'right'}))
     }
   }
 </script>
