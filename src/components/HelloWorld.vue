@@ -5,7 +5,7 @@
 </template>
 <script>
   import SearchBar from '@/components/SearchBar'
-  import SpiderAnimation from '@/components/spiderAnimation.js'
+  import SpiderAnimation from '@/assets/spiderAnimation.js'
   const resultList = [{
     id: 0,
     text: '搜索值的气味1'
